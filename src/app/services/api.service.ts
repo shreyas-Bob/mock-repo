@@ -10,7 +10,7 @@ export class ApiService{
         private http: HttpClient){
     }
     private url='https://localhost:4200';
-getHeroes(): Observable<any> {
+getHeroes(){
     const baseUrl= `${this.url}/get`
     return this.http.get(baseUrl)
   }
